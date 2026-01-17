@@ -1,0 +1,246 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+body {
+  background-color: black;
+  background: linear-gradient(165deg, rgb(0, 0, 0) 39%, rgb(19, 19, 214) 73%);
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+body header {
+  padding-bottom: 30px;
+}
+body  nav {
+  align-items: baseline;
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(17, 12, 32, 0.8);
+  width: 100%;
+  height: 58px;
+}
+body  nav h1 {
+  padding-left: 40px;
+  color: white;
+  font-size: 30px;
+  font-weight: 800;
+}
+body  nav div {
+  background: #000;
+  background: linear-gradient(165deg, rgb(0, 0, 0) 39%, rgb(19, 19, 214) 73%);
+  display: flex;
+  gap: 30px;
+  padding-right: 40px;
+}
+body  nav div a {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  transition: 1s;
+}
+body nav div a:hover {
+  color: blueviolet;
+  font-size: 25px;
+}
+body header .header {
+  width: 100%;
+  height: 630px;
+  background: #000;
+  background: linear-gradient(165deg, rgb(0, 0, 0) 36%, rgb(19, 19, 214) 94%);
+}
+body header .header div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 130px;
+}
+body header .header div h1 {
+  color: white;
+  font-size: 100px;
+}
+body header .header div p {
+  color: gray;
+  font-size: 35px;
+}
+body header .header div a {
+  width: 250px;
+  height: 50px;
+  background-color: blue;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 10px;
+  border-radius: 25px;
+  transition: 1s;
+}
+body header .header div a:hover {
+  padding-top: 5px;
+  font-size: 35px;
+  color: aqua;
+}
+body H1 {
+  color: white;
+  font-size: 50px;
+  font-weight: 400;
+  padding-bottom: 30px;
+}
+body main {
+  padding-left: 80px;
+}
+body main .main {
+  gap: 30px;
+  flex-wrap: wrap;
+  display: flex;
+  padding-bottom: 30px;
+}
+body main .main div h1 {
+  font-weight: 800;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+body main .main div img {
+  width: 200px;
+  height: 200px;
+  border-radius: 15%;
+}
+body main .main div p {
+  font-size: 20px;
+  color: white;
+  width: 200px;
+}
+body main .main .More {
+  padding-top: 100px;
+  width: 200px;
+  height: 320px;
+  text-align: center;
+}
+body main .main .More a {
+  color: white;
+  font-size: 30px;
+  transition: 1s;
+}
+body main .main .More a:hover {
+  font-size: 50px;
+  color: blueviolet;
+}
+body main .Mini {
+  display: flex;
+  align-items: baseline;
+  gap: 50px;
+  padding-bottom: 50px;
+}
+body main .Mini p {
+  color: white;
+  font-size: 30px;
+}
+body main .tournament img {
+  padding-bottom: 30px;
+  border-radius: 7%;
+}
+body main .tournament a {
+  color: white;
+  font-size: 30px;
+  transition: 1s;
+  padding-bottom: 30px;
+}
+body main .tournament a:hover {
+  font-size: 50px;
+  color: blueviolet;
+}
+body footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 250px;
+  background: #000;
+  background: linear-gradient(165deg, rgb(0, 0, 0) 39%, rgb(19, 19, 214) 73%);
+  padding-left: 50px;
+  align-items: center;
+}
+body footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+body footer ul li {
+  color: white;
+  font-size: 25px;
+  font-weight: 400;
+}
+body footer ul a {
+  color: white;
+  font-size: 25px;
+}
+body footer img {
+  width: 140px;
+  padding-right: 50px;
+}/*# sourceMappingURL=style.css.map */
+

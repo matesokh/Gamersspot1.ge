@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+
+{% block title %}Tournaments{% endblock %}
+{% block href %}../static/tournaments.css{% endblock %}
+{% block media %}../static/Media css/tournaments.css{% endblock %}
+
+{% block body %}
+
+<h1 class="event">UPCOMING EVENTS</h1>
+<main>
+    {% for tournament in tournaments %}
+    <section>
+        <img src="{{ url_for('static', filename='images/' ~ tournament.image) }}" alt="">
+
+        <div>
+            <i class="fa-solid fa-gamepad"></i>
+            <h1>{{ tournament.game }}</h1>
+        </div>
+
+        <p style="margin-top: 15px; margin-left: 15px;">{{ tournament.game_type }}</p>
+        <div>
+            <i class="fa-solid fa-person"></i>
+            <p>{{ tournament.max_players }}</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-calendar"></i>
+            <p>{{ tournament.date }}</p>
+        </div>
+        <a href="https://discord.gg/GW7TzkXkB7" target="_blank">Join</a>
+
+        {% if current_user.is_authenticated and current_user.role == "Admin" %}
+        <form action="{{ url_for('delete_tournament', tournament_id=tournament.id) }}" method="post" style="margin-bottom: 5px;">
+           <center><button type="submit" class="white-btn" style="background-color: red;">Delete</button></center>
+        </form>
+        {% endif %}
+    </section>
+    {% endfor %}
+
+</main>
+<footer>
+    <div>
+        <ul>
+            <li>Navigation Links</li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About us</a></li>
+            <li><a href="/games">Games</a></li>
+            <li><a href="/tournaments">Torunament</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </div>
+    <div>
+        <ul>
+            <li>Contact info</li>
+            <li>Email:<a href=""> GamersSpot@gmail.com</a></li>
+            <li>Phone: 555 555 555</li>
+            <li><a href="https://maps.app.goo.gl/xtt4rFRgwuWSLrXR6" target="_blank">Location</a></li>
+        </ul>
+    </div>
+    <div>
+        <ul>
+            <li>Social links</li>
+            <a href="https://discord.gg/GW7TzkXkB7" target="_blank"><i class="fa-brands fa-discord">
+                    Discord</i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i> Facebook</a>
+            <a href=""><i class="fa-brands fa-youtube"></i> Youtube</a>
+            <a href=""><i class="fa-brands fa-twitch" style="color: #B197FC;"></i> Twitch</a>
+        </ul>
+    </div>
+    <a href="https://tbcbank.ge/ka/tbc-education" target="blank"><img src="../static/images/თიბისი.png"
+            alt="Tbclogo"></a>
+</footer>
+<script src="https://kit.fontawesome.com/44c8b205f8.js" crossorigin="anonymous"></script>
+{% endblock %}

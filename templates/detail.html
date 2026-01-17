@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ game.title }}</title>
+    <link rel="stylesheet" href="../static/gamesweb.css">
+    <link rel="stylesheet" href="../static/Media css/gamesweb.css">
+    <link rel="icon" href="../static/images/Ficon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<div class="back">
+    <a onclick="history.back()"><i class="fa-solid fa-backward fa-2xl" style="color: #fafafa;"></i></a>
+</div>
+
+<body>
+    <main>
+        <div>
+
+           <center><p>{{ game.title }}</p></center>
+
+            <img src="{{ url_for('static', filename='images/' ~ game.image) }}" alt="{{ game.title }}">
+            <div>
+                <p>{{ game.description }}</p>
+                <a href="{{ game.download_link }}" target="_blank">Download</a>
+            </div>
+            {% if current_user.is_authenticated and current_user.role == "Admin" %}
+            <form action="{{ url_for('delete_game', game_id=game.id) }}" method="post">
+                <button type="submit" class="white-btn" style="background-color: red;">Delete</button>
+            </form>
+            {% endif %}
+        </div>
+
+<p style="color: white;">Comments</p>
+
+{% if comments %}
+    {% for comment in comments %}
+        <div style="border: 3px solid #5e2ac6; border-radius: 25px; margin-bottom: 20px;">
+            <h1 style="padding: 10px; color: white;">{{ comment.user.username }}</h1>
+            <center><p>{{ comment.text }}</p></center>
+
+            {% if current_user.is_authenticated and current_user.role == "Admin" %}
+            <form action="{{ url_for('delete_comment', comment_id=comment.id, game_id=game.id) }}"
+                  method="POST">
+                <button type="submit" style="background-color:red; color:white;">
+                    Delete
+                </button>
+            </form>
+            {% endif %}
+        </div>
+    {% endfor %}
+{% else %}
+    <p style="color: white;">No comments yet. Be the first!</p>
+{% endif %}
+
+<p style="color: white;">Add a comment</p>
+
+<form method="POST">
+    {{ form.hidden_tag() }}
+    <section>
+        {{ form.text(rows=4, placeholder="Write your comment here") }}
+    </section>
+    <br>
+    <center><section style="margin-bottom: 20px;">{{ form.submit() }}</section></center>
+</form>
+    </main>
+    <script src="https://kit.fontawesome.com/44c8b205f8.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

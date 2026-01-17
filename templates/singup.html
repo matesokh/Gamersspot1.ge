@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up</title>
+    <link rel="icon" href="images/Ficon.png">
+    <link rel="stylesheet" href="../static/signin.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="back">
+        <a onclick="history.back()"><i class="fa-solid fa-backward fa-2xl" style="color: #fafafa;"></i></a>
+    </div>
+    <main>
+        <div>
+            
+            <h1>Register</h1>
+            <form style="display: flex; flex-direction: column; gap: 17px;" method="post">
+                {{form.hidden_tag()}}
+             <section>
+                {{form.username(placeholder="username")}}
+           <i class="fa-solid fa-user fa-lg" style="color: #fafafa;"></i>
+              </section>
+              <section>
+            {{form.email(placeholder="Email")}}
+            <i class="fa-solid fa-envelope fa-lg" style="color: #ffffff;"></i>
+           </section>
+            <section>
+            {{form.password(placeholder="Password")}}
+            <i class="fa-solid fa-lock fa-lg" style="color: #ffffff;"></i>
+            </section>
+                                                              
+            {{form.submit(Value="Register")}}
+            
+            <center> <a href="/login">Already have account Log in </a></center>
+            </form>
+        </div>
+    </main>
+    <script src="https://kit.fontawesome.com/44c8b205f8.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

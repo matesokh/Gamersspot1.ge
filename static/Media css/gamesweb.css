@@ -1,0 +1,31 @@
+
+
+@media (max-width:1300px) {
+    img {
+        width: 900px;
+    }
+}
+
+@media (max-width:1217px) {
+
+    body {
+        img {
+            width: 600px;
+        }
+        div {
+            flex-direction: column !important;
+            p{
+                width: 300px  !important;
+                
+            }
+        }
+    }
+}
+
+@media (max-width:619px) {
+  img {
+    width: 300px !important;
+  }
+     
+}
+

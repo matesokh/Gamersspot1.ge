@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+
+{% block title %}GamersSpot - Home{% endblock %}
+
+{% block href %}{{ url_for('static', filename='style.css') }}{% endblock %}
+{% block media %}{{ url_for('static', filename='Media css/index.css') }}{% endblock %}
+  
+{% block body %}
+    <header>
+        <div class="header">
+            <div>
+                <h1>Welcome to</h1>
+                <h1 style="padding-bottom: 30px;">GamersSpot</h1>
+                <p>A comunity website for Georgian Gamers-experience our </p>
+                <p style="padding-bottom: 30px;">services, latest games, and news.</p>
+                <a href="/signup">Get Started</a> 
+            </div>
+        </div>
+    </header>
+    <main>
+        <H1>Mini Description Of Games</H1>
+        <div class="main">
+            <div>
+                <a href=""><img src="../static/images/cs2.webp" alt="cs2L"></a>
+                <h1>Counter-strike 2</h1>
+                <p>Counter-Strike is a series of multiplayer tactical first-person shooter video games.</p>
+            </div>
+            <div>
+                <a href=""><img src="../static/images/fortnite.jpg" alt="FTL"></a>
+                <h1>Fortnite</h1>
+                <p>Fortnite is an online video game and game platform developed by Epic Games</p>
+            </div>
+            <div>
+                <a href=""><img src="../static/images/dota.jpg" alt="DL"></a>
+                <h1>Dota</h1>
+                <p>Dota 2 is a 2013 multiplayer online battle arena video game by Valve. 
+                </p>
+            </div>
+            <div class="More">
+             <a href="/games">See More</a>
+            </div>
+        </div>
+        <h1>Mini News</h1>
+        <div class="Mini">
+            <p>
+               NEW Gaming tournaments is Announced for Fortnite,CS2 and Dota
+            </p>
+        </div>
+        <div class="tournament" style="display: flex; align-items: center; gap: 50px;">
+        <img src="../static/images/torunament.avif" alt="photo">
+        <a href="/tournaments">To join click here</a>
+        </div>
+        </div>
+    </main>
+    <footer>
+       <div>
+        <ul>
+            <li>Navigation Links</li>
+            <li><a >Home</a></li>
+            <li><a href="/aboutus">About us</a></li>
+            <li><a href="/games">Games</a></li>
+            <li><a href="/tournaments">Torunament</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+       </div>
+       <div>
+        <ul>
+            <li>Contact info</li>
+            <li>Email:<a href=""> GamersSpot@gmail.com</a></li>
+            <li>Phone: 555 555 555</li>
+            <li><a href="https://maps.app.goo.gl/xtt4rFRgwuWSLrXR6" target="_blank">Location</a></li>
+        </ul>
+       </div>
+       <div>
+        <ul>
+            <li>Social links</li>
+            <a href="https://discord.gg/GW7TzkXkB7" target="_blank"><i class="fa-brands fa-discord"> Discord</i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i> Facebook</a>
+            <a href=""><i class="fa-brands fa-youtube"></i> Youtube</a>
+            <a href=""><i class="fa-brands fa-twitch" style="color: #B197FC;"></i> Twitch</a>
+        </ul>
+       </div>
+       <a href="https://tbcbank.ge/ka/tbc-education" target="blank"><img src="../static/images/თიბისი.png" alt="Tbclogo"></a>
+    </footer>
+{% endblock %}

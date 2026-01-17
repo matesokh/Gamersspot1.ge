@@ -1,0 +1,117 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+body {
+  background-color: black;
+  background: linear-gradient(165deg, rgb(0, 0, 0) 39%, rgb(19, 19, 214) 73%);
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  position: relative;
+}
+body .back {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+body main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 100px;
+}
+body main img {
+  border-radius: 35px;
+}
+body main div {
+  display: flex;
+  align-items: center;
+}
+body main div p {
+  color: white;
+  width: 1000px;
+  font-size: 20px;
+}
+body main div a {
+  width: 200px;
+  height: 40px;
+  border-radius: 25px;
+  border: 5px solid #9f9dac;
+  color: white;
+  padding-top: 5px;
+  padding-left: 65px;
+}
+body main .images {
+  display: flex;
+  gap: 110px;
+  padding-bottom: 50px;
+}/*# sourceMappingURL=gamesweb.css.map */

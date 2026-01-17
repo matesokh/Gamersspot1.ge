@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+
+{% block title %}Games{% endblock %}
+{% block href %}{{ url_for('static', filename='games.css') }}{% endblock %}
+{% block media %}{{ url_for('static', filename='Media css/games.css') }}{% endblock %}
+{% block head_extra %}
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+{% endblock %}
+
+{% block body %}
+
+  <div id="carouselExampleIndicators" class="carousel slide" style="margin-bottom: 25px;">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{{ url_for('static', filename='images/carousel1.png') }}" class="d-block w-100" alt="image">
+      </div>
+      <div class="carousel-item">
+        <img src="{{ url_for('static', filename='images/carousel2.webp') }}" class="d-block w-100" alt="image">
+      </div>
+      <div class="carousel-item">
+        <img src="{{ url_for('static', filename='images/carousel3.jpg') }}" class="d-block w-100" alt="image">
+      </div>
+    
+    </div>
+
+  </div>
+  <H1>Games</H1>
+  <main>
+{% for game in games %}
+  <a href="{{ url_for('game_detail', game_id=game.id) }}">
+    {{ game.title }}
+  </a>
+  
+{% endfor %}
+
+    
+ 
+   
+
+  </main>
+
+  <footer>
+    <div>
+      <ul>
+        <li>Navigation Links</li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About us</a></li>
+        <li><a href="/games">Games</a></li>
+        <li><a href="/tournaments">Torunament</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <ul>
+        <li>Contact info</li>
+        <li>Email:<a href=""> GamersSpot@gmail.com</a></li>
+        <li>Phone: 555 555 555</li>
+        <li><a href="https://maps.app.goo.gl/xtt4rFRgwuWSLrXR6" target="_blank">Location</a></li>
+      </ul>
+    </div>
+    <div>
+      <ul>
+        <li>Social links</li>
+        <a href="https://discord.gg/GW7TzkXkB7" target="_blank"><i class="fa-brands fa-discord"> Discord</i></a>
+        <a href=""><i class="fa-brands fa-facebook"></i> Facebook</a>
+        <a href=""><i class="fa-brands fa-youtube"></i> Youtube</a>
+        <a href=""><i class="fa-brands fa-twitch" style="color: #B197FC;"></i> Twitch</a>
+      </ul>
+    </div>
+    <a href="https://tbcbank.ge/ka/tbc-education" target="blank"><img src="{{ url_for('static', filename='images/თიბისი.png') }}" alt="Tbclogo"></a>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+  integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+  integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+   <script src="https://kit.fontawesome.com/44c8b205f8.js" crossorigin="anonymous"></script>
+
+{% endblock %}

@@ -1,0 +1,257 @@
+@media (max-width:1200px) {
+    body {
+        nav {
+            div {
+
+                gap: 15px !important;
+                a {
+                    p{
+                        display: none;
+
+                    }
+                    i {
+                        display: flex !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:823px) {
+    body {
+        main {
+            padding-left: 10px !important;
+        }
+    }
+
+}
+
+
+
+
+
+@media (max-width:768px) {
+    body {
+   
+            nav {
+                align-items: center !important;
+
+                h1 {
+                    padding-bottom: 0px !important;
+                }
+
+            }
+
+            .header {
+                p {
+                    font-size: 25px !important;
+                }
+            }
+        
+
+        main {
+
+            padding-left: 10px !important;
+
+            .main {
+                padding-left: 30px;
+            }
+
+            .tournament {
+                img {
+                    width: 460px;
+                }
+
+                a:hover {
+                    font-size: 35px !important;
+                }
+            }
+        }
+
+        footer {
+
+            display: flex;
+            flex-direction: column;
+            padding-left: 10px !important;
+
+            div {
+                a {
+                    font-size: 25px !important;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:585px) {
+    main {
+        .tournament {
+            flex-direction: column;
+        }
+    }
+
+}
+
+
+
+
+@media (max-width:521px) {
+    body {
+        main {
+            padding-left: 0px !important;
+        }
+
+
+
+            nav {
+                h1 {
+                    padding-left: 10px !important;
+                }
+
+                h1 {
+                    font-size: 20px !important;
+                }
+            }
+
+            .header {
+                p {
+                    font-size: 20px !important;
+                }
+            }
+        }
+
+        .tournament {
+            flex-direction: column;
+
+            img {
+                width: 440px !important;
+            }
+        }
+    }
+
+
+
+
+
+
+
+@media (max-width:480px) {
+    body {
+
+            nav {
+                h1 {
+                    padding-left: 10px !important;
+                    font-size: 20px !important;
+                }
+
+                div {
+                    gap: 13px !important;
+
+
+                }
+            }
+
+            .header {
+                h1 {
+                    font-size: 50px !important;
+                }
+
+                p {
+                    font-size: 15px !important;
+                }
+            }
+        }
+
+        main {
+
+            padding-left: 0px !important;
+
+            .main {
+                padding-left: 40px;
+            }
+
+            .tournament {
+                img {
+                    width: 300px !important;
+                }
+            }
+        }
+
+        footer {
+           
+                 
+        height: 100% !important;
+        padding-top: 40px;
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 30px;
+    }
+            }
+        
+    
+
+
+
+
+    @media (max-width:360px) {
+        body {
+  
+                nav {
+                    h1 {
+                        font-size: 15px !important;
+                    }
+
+                    div {
+                        gap: 12px !important;
+
+                        a {
+                            i {
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+
+                .header {
+                    h1 {
+                        font-size: 50px !important;
+                    }
+
+                    p {
+                        font-size: 14px !important;
+                    }
+                }
+            }
+        main {
+
+            h1 {
+                font-size: 20px !important;
+                padding-left: 10px !important;
+            }
+            .Mini {
+                p {
+                    font-size: 20px !important;
+                }
+            }
+            .tournament {
+                img {
+                    width: 300px !important;
+                }
+            }
+        }
+    }
+
+    footer {
+        height: 100% !important;
+        padding-top: 40px;
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 30px;
+    }
+
+
+
+
+ 

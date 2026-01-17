@@ -1,0 +1,237 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+body {
+  background-color: #000;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  background-color: black;
+  background: linear-gradient(165deg, rgb(0, 0, 0) 39%, rgb(19, 19, 214) 73%);
+}
+body nav {
+  align-items: baseline;
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(17, 12, 32, 0.8);
+  width: 100%;
+  height: 58px;
+}
+body nav h1 {
+  padding-left: 40px;
+  color: white;
+  font-size: 30px;
+  font-weight: 800;
+}
+body  nav div {
+  background: #000;
+  background: linear-gradient(165deg, rgb(0, 0, 0) 39%, rgb(19, 19, 214) 73%);
+  display: flex;
+  gap: 50px;
+  padding-right: 40px;
+}
+body  nav div a {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  transition: 1s;
+}
+body  nav div a:hover {
+  color: blueviolet;
+  font-size: 25px;
+}
+body main .contactinfo {
+  display: flex;
+  justify-content: space-around;
+  height: 750px;
+  align-items: center;
+}
+body main .contactinfo div {
+  border: 5px solid rgb(110, 43, 202);
+  border-radius: 5%;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 40px;
+  padding-bottom: 15px;
+  padding-top: 5px;
+  gap: 15px;
+}
+body main .contactinfo div H1 {
+  color: white;
+  font-size: 50px;
+  padding-left: 50px;
+}
+body main .contactinfo div p {
+  color: white;
+  font-size: 30px;
+}
+body main .contactinfo div a {
+  color: white;
+  font-size: 30px;
+}
+body main .contactus {
+  display: flex;
+  border: 5px solid #5e2ac6;
+  border-radius: 25px;
+  margin-left: 100px;
+  margin-right: 100px;
+  justify-content: space-around;
+  margin-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+body main .contactus form {
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 500px;
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+}
+body main .contactus form h1 {
+  color: white;
+  font-size: 50px;
+}
+body main .contactus form input {
+  width: 380px;
+  height: 50px;
+  border-radius: 18px;
+  padding-left: 15px;
+  font-size: 15px;
+  font-weight: 300;
+  background: 0;
+  color: white;
+  outline: none;
+  border: 3px solid #5e2ac6;
+}
+body main .contactus form ::-moz-placeholder {
+  color: white;
+}
+body main .contactus form ::placeholder {
+  color: white;
+}
+body main .contactus div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+body main .contactus div textarea {
+  width: 800px;
+  height: 400px;
+  background: 0;
+  color: white;
+  resize: none;
+  padding-top: 20px;
+  padding-left: 20px;
+  border-radius: 20px;
+  outline: none;
+  border: 3px solid #5e2ac6;
+}
+body main .contactus div ::-moz-placeholder {
+  color: white;
+}
+body main .contactus div ::placeholder {
+  color: white;
+}
+body footer {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 250px;
+  background: #000;
+  background: linear-gradient(165deg, rgb(0, 0, 0) 39%, rgb(19, 19, 214) 73%);
+  padding-left: 50px;
+  align-items: center;
+}
+body footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+body footer ul li {
+  color: white;
+  font-size: 25px;
+  font-weight: 400;
+}
+body footer ul a {
+  color: white;
+  font-size: 25px;
+}
+body footer img {
+  width: 240px;
+  padding-right: 50px;
+}/*# sourceMappingURL=contact.css.map */

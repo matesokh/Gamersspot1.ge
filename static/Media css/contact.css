@@ -1,0 +1,215 @@
+@media (max-width:1448px) {
+    body {
+        main {
+            .contactinfo {
+                iframe {
+                    width: 600px !important;
+                    height: 500px !important;
+                }
+            }
+
+            .contactus {
+                div {
+                    textarea {
+                        width: 540px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:1200px) {
+    body {
+        nav {
+            div {
+
+                gap: 15px !important;
+                a {
+                    p{
+                        display: none;
+
+                    }
+                    i {
+                        display: flex !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1195px) {
+    body {
+
+        main {
+            .contactus {
+                div {
+                    textarea {
+                        width: 340px !important;
+                    }
+                }
+            }
+        }
+    }
+
+    
+}
+
+@media (max-width:1035px) {
+    body {
+        main {
+            .contactinfo {
+                margin-top: 50px !important;
+                margin-bottom: 50px !important;
+                flex-direction: column !important;
+                gap: 50px !important;
+
+                div {
+                    gap: 33px !important;
+                }
+
+                iframe {
+                    width: 505px !important;
+                    height: 500px !important;
+                }
+            }
+            .contactus {
+                flex-direction: column !important;
+                align-items: center !important;
+            }
+        }
+    }
+}
+
+@media (max-width:869px) {
+    body {
+        nav {
+            p{
+            display: none;
+            }
+            i {
+                display: flex !important;
+            }
+        }
+
+        footer {
+            padding-top: 50px !important;
+            flex-direction: column !important;
+            align-items: flex-start !important;
+            gap:  50px;
+            height: 100%;
+        }
+    }
+}
+@media (max-width:619px) {
+    body {
+        nav {
+            h1 {
+                font-size: 25px !important;
+                padding-left: 10px !important;
+            }
+            div {
+                gap: 25px !important;
+            }
+        }
+
+        .contactus {
+             margin-right: 0px !important;
+             margin-left: 0px !important;
+            form {
+                width: 300px !important;
+
+                .input {
+                    width: 300px;
+                }
+                .submit {
+                    width: 300px;
+                }
+            }
+
+            div {
+                textarea {
+                    width: 270px;
+                }
+            }
+        }
+    }
+}
+@media (max-width:519px) {
+    body {
+        .contactinfo {
+            div {
+                width: 286px !important;
+
+                h1 {
+                    font-size: 35px !important;
+                }
+                p {
+                    font-size: 20px !important;
+                }
+                a {
+                    font-size: 20px !important;
+                }
+            }
+            
+            .iframe {
+                width: 300px !important;
+            }
+            
+        }
+
+        .contactus {
+            form {
+                width: 300px !important;
+                
+                input {
+                    width: 270px;
+                }
+
+            }
+        }
+    }
+}
+
+@media (max-width:440px) {
+     body {
+        nav {
+            h1 {
+                font-size: 15px !important;
+            }
+            div {
+                a {
+                    font-size: 15px !important;
+                }
+            }
+        }
+     }
+}
+@media (max-width:390px) {
+    body {
+        nav {
+            div {
+                gap: 12px !important;
+            }
+        }
+
+        .contactus {
+            form {
+                width: 280px !important;
+
+                .input {
+                    width: 250px !important;
+                }
+                .submit {
+                    width: 250px !important; 
+                }
+            }
+
+            div {
+                .textarea {
+                    width: 250px !important;
+                }
+            }
+        }
+    }
+}

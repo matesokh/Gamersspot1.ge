@@ -1,0 +1,142 @@
+@media (max-width:1200px) {
+    body {
+        nav {
+            div {
+
+                gap: 15px !important;
+                a {
+                    p{
+                        display: none;
+
+                    }
+                    i {
+                        display: flex !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:861px ) {
+
+body {
+    header {
+        
+            h1 {
+                padding-left: 10px !important;
+            }
+            div {
+                gap: 30px !important;
+            }
+        }
+    }
+
+     main { 
+        flex-direction: column;
+     }
+}  
+
+@media (max-width:823px )  {
+    body {
+        
+            nav {
+                align-items: center !important;
+                h1 {
+                    padding-bottom: 0px !important;
+                }
+                a {
+                    p {
+                    font-size: 0px !important;
+                    }
+                    i {
+                        display: flex !important;
+                    }
+                }
+                
+            }
+            nav div {
+                gap: 20px !important;
+            }
+        }
+    }
+
+ 
+@media (max-width:760px) {
+
+    body {
+        footer {
+            padding-top: 50px;
+            padding-left: 25px;
+            padding-bottom: 50px;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 30px;
+            height: 100%;
+
+            img {
+                width: 120px !important;
+            }
+        }
+    }
+}
+
+
+
+@media (max-width:516px) {
+       body {
+
+                h1 {
+                    padding-left: 10px !important;
+                    font-size: 15px !important;
+                }
+             }
+         main {
+            img {
+                width: 270px;
+            }
+         }
+ 
+
+        footer {
+            padding-top: 50px;
+            padding-left: 25px;
+            padding-bottom: 50px;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 30px;
+            height: 100%;
+        }
+       }
+
+
+@media (max-width:418px) {
+    body {
+
+            nav {
+                div {
+                    gap: 20px !important;
+                }
+            }
+        }
+    }
+
+
+
+@media (max-width:368px) {
+    body {
+
+        nav {
+            div {
+                gap: 12px !important;
+
+                a {
+                    font-size: 15px !important;
+                }
+            }
+        }
+    }
+}
+
+                
+            

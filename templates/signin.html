@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="icon" href="images/Ficon.png">
+    <link rel="stylesheet" href="../static/signin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="back">
+        <a onclick="history.back()"><i class="fa-solid fa-backward fa-2xl" style="color: #fafafa;"></i></a>
+    </div>
+    <main>
+        <div>
+            <h1>Log in</h1>
+            <form method="post" action="/login" style="display: flex; flex-direction: column; gap: 20px;">
+                {{ form.hidden_tag() }}
+                <section>
+                    <label for="username"></label>
+                    <input type="text" name="username" placeholder="Username">
+                    <i class="fa-solid fa-user fa-lg" style="color: #fafafa;"></i>
+                </section>
+                <section>
+                    <label for="password"></label>
+                    <input type="password" name="password" placeholder="Password">
+                    <i class="fa-solid fa-lock fa-lg" style="color: #ffffff;"></i>
+                </section>
+                
+                
+                    <input type="submit" value="Log in" name="submit" style="color: white; font-weight: 600; font-size: 20px;">
+            </form>
+            <p>Don't have an account? <a href="/signup">Register</a></p>
+        </div>
+    </main>
+    <script src="https://kit.fontawesome.com/44c8b205f8.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

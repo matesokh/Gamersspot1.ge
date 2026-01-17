@@ -1,0 +1,25 @@
+@media (max-width:360px ) {
+
+    body {
+        main {
+            div {
+                width: 300px !important;
+                
+                section {
+                    input {
+                        width: 280px !important;
+                    }
+                }
+               .Remember {
+                width: 280px !important;
+               }
+                form {
+
+                    input {
+                        width: 280px !important;
+                    }
+                }
+            }
+        }
+    }
+}

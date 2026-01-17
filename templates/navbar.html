@@ -1,0 +1,20 @@
+<nav>
+            <h1>GamersSpot</h1>
+            <div>
+                <a href="/"> <p>Home</p><i class="fa-solid fa-house" style="color: #ffffff; display: none;" ></i></a>
+                <a href="{{ url_for('aboutus') }}"><p> About us </p><i class="fa-solid fa-address-book" style="color: #ffffff; display: none;"></i></a> 
+                <a href="/games"> <p> Games </p><i class="fa-solid fa-gamepad" style="color: #ffffff; display: none;"></i></a>
+                <a href="/tournaments"> <p>Tournaments</p> <i class="fa-solid fa-trophy" style="color: #ffffff; display: none;"></i></a>
+                <a href="/contact"> <p> Contact </p><i class="fa-solid fa-location-crosshairs" style="color: #fafafa;display: none;"></i></a> 
+                {% if current_user.is_authenticated %} 
+                <a href="{{ url_for('logout') }}"><p>log out</p><i class="fa-solid fa-arrow-right-from-bracket" style="color: #ffffff; display: none;"></i></a>
+            {% else %}
+                <a href="/login"><p>log in</p><i class="fa-solid fa-arrow-right-from-bracket" style="color: #ffffff; display: none;"></i></a>
+            {% endif %}
+
+            {% if current_user.role == "Admin" %}
+            <a href="/add-game"><p>add game</p><i class="fa-solid fa-game-board" style="color: #ffffff; display: none;"></i></a>
+            <a href="/add-tournament"><p>add tournament</p><i class="fa-solid fa-chess" style="color: #ffffff; display: none;"></i></a>
+            {%endif%}
+            </div>
+        </nav>

@@ -1,0 +1,46 @@
+body {
+    padding-top: 40px;
+    background: #000000;
+background: linear-gradient(90deg,rgba(0, 0, 0, 1) 19%, rgba(204, 73, 73, 1) 77%);
+    font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+
+}
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.nav-bar {
+    display: flex;
+    gap: 25px;
+    margin-right: 50px;
+}
+.nav-bar a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+
+
+.profile {
+    margin-top: 50px;
+    margin-left: 50px;
+    border-radius: 15px;
+    width: 300px;
+    border: 2px solid white;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.profile img {
+    width: 100px;
+}
+.profile div p {
+    color: white;
+}

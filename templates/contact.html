@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+
+{% block title %}Contact{% endblock %}
+{% block href %}../static/contact.css{% endblock %}
+{% block media %}../static/Media css/contact.css{% endblock %}
+
+{% block body %}
+  <header>
+  </header>
+  <main>
+    <section class="contactinfo">
+      <div>
+        <H1>Contact Info</H1>
+        <p><i class="fa-regular fa-envelope fa-flip-horizontal fa-2xl" style="color: #5e2ac6;"></i> GamersSpot@gmail.com
+        </p>
+        <p><i class="fa-solid fa-phone fa-2xl" style="color: #5e2ac6;"></i> 571 73 90 87</p>
+        <a href=""><i class="fa-brands fa-facebook fa-2xl" style="color: #5e2ac6;"></i> Facebook</a>
+        <a href="https://discord.gg/GW7TzkXkB7" target="_blank"><i class="fa-brands fa-discord fa-2xl" style="color: #5e2ac6;"></i> Discord</a>
+        <a href=""><i class="fa-brands fa-twitch fa-2xl" style="color: #5e2ac6;"></i> Twitch</a>
+      </div>
+      <iframe class="iframe"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d301.55463483423154!2d42.67482518347534!3d42.258194732024684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x405c8d0044305bcd%3A0xe4a50b33b1b16bc5!2z4YOb4YOQ4YOX4YOUIOGDoeGDneGDruGDkOGDq-GDmOGDoSDhg5nhg5Dhg6Dhg5vhg5jhg5Phg5Dhg5vhg50!5e0!3m2!1sen!2sge!4v1751544951327!5m2!1sen!2sge"
+        width="950" height="600" style="border-radius: 5%; border: 3px solid rgb(110, 43, 202);" allowfullscreen=""
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </section>
+    <section class="contactus">
+      <form>
+        <h1>Contact US</h1>
+        <label for="Fname"></label>
+        <input type="text" name="Fname" placeholder="Firstname" class="input">
+        <label for="Lname"></label>
+        <input type="text" name="Lname" placeholder="Last name" class="input">
+        <label for="Num"></label>
+        <input type="tel" name="Num" placeholder="Number" class="input">
+        <label for="Email"></label>
+        <input type="email" name="Email" placeholder="Email"class="input">
+        <label for=""></label>
+        <input type="submit" name="Sumbit" class="submit" value="Send" class="submit">
+      </form>
+      <div>
+        
+        <label for="TXT" style="color: white;">Message</label>
+        <textarea name="TXT" id="" placeholder="Message" class="textarea"></textarea>
+     
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div>
+      <ul>
+        <li>Navigation Links</li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About us</a></li>
+        <li><a href="/games">Games</a></li>
+        <li><a href="/tournaments">Tournaments</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <ul>
+        <li>Contact info</li>
+        <li>Email:<a href=""> GamersSpot@gmail.com</a></li>
+        <li>Phone: 555 555 555</li>
+        <li><a href="https://maps.app.goo.gl/xtt4rFRgwuWSLrXR6" target="_blank">Location</a></li>
+      </ul>
+    </div>
+    <div>
+      <ul>
+        <li>Social links</li>
+        <a href="https://discord.gg/GW7TzkXkB7" target="_blank"><i class="fa-brands fa-discord"> Discord</i></a>
+        <a href=""><i class="fa-brands fa-facebook"></i> Facebook</a>
+        <a href=""><i class="fa-brands fa-youtube"></i> Youtube</a>
+        <a href=""><i class="fa-brands fa-twitch" style="color: #B197FC;"></i> Twitch</a>
+      </ul>
+    </div>
+    <a href="https://tbcbank.ge/ka/tbc-education" target="blank"><img src="../static/images/თიბისი.png" alt="Tbclogo"></a>
+  </footer>
+  <script src="https://kit.fontawesome.com/44c8b205f8.js" crossorigin="anonymous"></script>
+{% endblock %}
