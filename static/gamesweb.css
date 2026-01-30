@@ -118,6 +118,7 @@ body main .images {
   display: flex;
   gap: 110px;
   padding-bottom: 50px;
+  width: 800px;
 }/*# sourceMappingURL=gamesweb.css.map */
 button{
   margin-bottom: 10px;
